@@ -1,0 +1,192 @@
+/*
+---------------------------
+WapBlog Flex v1.0
+by WapBlog.ID Official Team
+---------------------------
+*/
+html {
+  --wbf-1c: #de1339;
+  --wbf-2c: #c01031;
+  
+  --wbf-black: #0e2332;
+  
+  --wbf-fonts: "Commissioner", sans-serif, serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:focus {
+  outline: 0;
+}
+::placeholder {
+  color: #62682b;
+}
+a {
+  color: var(--wbf-1c);
+  text-decoration: none;
+  cursor: pointer;
+}
+body {
+  font-family: var(--wbf-fonts);
+  font-size: 16px;
+  color: #62686b;
+  background: #fff;
+}
+img {
+  max-width: 100%;
+}
+ul, ol {
+  list-style: none;
+}
+
+/*
+Container
+*/
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 1196px;
+}
+.container-fluid {
+  padding: 0 16px;
+}
+.container-small {
+  max-width: 968px;
+}
+
+/*
+Visibility
+*/
+.hdd,
+.toggle-menu {
+  display: none;
+}
+
+/*
+Text
+*/
+.t-upp {
+  text-transform: uppercase;
+}
+.t-cap {
+  text-transform: capitalize;
+}
+.t-low {
+  text-transform: lowercase;
+}
+.t-l {
+  text-align: left;
+}
+.t-c {
+  text-align: center;
+}
+.t-r {
+  text-align: right;
+}
+.t-j {
+  text-align: justify;
+}
+
+/*
+Heading
+*/
+h1, h2, h3 {
+  font-weight: 600;
+}
+h4, h5 {
+  font-weight: 400;
+}
+h6 {
+  font-weight: 300;
+}
+/*
+Font
+*/
+.f-xsmall {
+  font-size: 12px;
+}
+.f-small {
+  font-size: 14px;
+}
+.f-normal {
+  font-size: 16px;
+  font-weight: 400;
+}
+.f-big {
+  font-size: 18px;
+}
+.f-xbig {
+  font-size: 25px;
+}
+.f-slim {
+  font-weight: 300;
+}
+.f-bold {
+  font-weight: 600;
+}
+.f-xbold {
+  font-weight: 700;
+}
+
+/*
+Margin
+*/
+.m-sm {
+  margin-bottom: 8px;
+}
+.m-md {
+  margin-bottom: 16px;
+}
+.m-lg {
+  margin-bottom: 24px;
+}
+
+/*
+Navigation
+*/
+nav {
+  background: #fff;
+  box-shadow: 0 2px 2px #0003;
+  padding: 12px 0;
+}
+nav a {
+  display: block;
+  line-height: 40px;
+}
+nav .container {
+  display: flex;
+}
+nav .brand-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+nav .navbar-menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-menu ul {
+  display: flex;
+}
+.navbar-menu ul li a {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+.navbar-menu ul li a.active {
+  background: var(--wbf-1c);
+  color: #fff;
+}
+
+/*
+Main
+*/
+main {
+  padding: 24px 0;
+}
